@@ -7,11 +7,11 @@
     </head>
     <body>
         <?php
-         echo "こんにちは". $_GET['name'] . " さん。<br/>";
-        echo "好きな果物は" . $_GET['fruits'] . " ですね。<br/>";
-        echo "好きなスポーツは " . $_GET['sports'] . " ですか。<br/>";
-        echo "好きな数字は " . $_GET['number'][0]. "、 " .$_GET['number'][1]. "、 " .$_GET['number'][2]." なのね。<br/>";
-        echo $_GET['name'] . "さんからのコメントはこちら！<br/> 「" . $_GET['comment']."」" ;
-               ?>
+            echo "こんにちは". $_GET['name'] . " さん。<br/>";
+            echo "好きな果物は" . $_GET['fruits'] . " ですね。<br/>";
+            echo "好きなスポーツは " . $_GET['sports'] . " ですか。<br/>";
+            echo "好きな数字は " . $_GET['number'][0] . "、 " . $_GET['number'][1] . "、 " . $_GET['number'][2] ." なのね。<br/>";
+            echo $_GET['name'] . "さんからのコメントはこちら！<br/> 「" . $_GET['comment']."」" ;
+        ?>
     </body>
 </html>
