@@ -16,7 +16,7 @@
             </tr>
             <tr>
                 <td><input type="text" name="product1" size="20" maxlength="28" /></td>
-                <td><input type="text" name="price1" size="25" maxlength="28" /></td>
+                <td><input type="text" name="price1" size="25" maxlength="28"  /></td>
                 <td><input type="text" name="number1" size="2" maxlength="3" />個</td>
                 <td><input type="radio" name="tax1" value="8％" checked="checked" />8％
                     <input type="radio" name="tax1" value="10％" />10％</td>
@@ -56,10 +56,10 @@
             </tr>
             <tr>
                 <td><?php echo $_POST['product1'];?></td>
-                <td><?php echo $_POST['price1'];?></td>
-                <td><?php echo $_POST['number1'];?></td>
+                <td style="text-align: right;""><?php echo $_POST['price1'];?></td>
+                <td style="text-align: right;""><?php echo $_POST['number1'];?></td>
                 <td><?php echo $_POST['tax1'];?></td>
-                <td>
+                <td style="text-align: right;"">
                     <?php
                         $price_1 = $_POST['price1'];
                         $number = $_POST['number1'];
@@ -71,10 +71,10 @@
             </tr>
             <tr>
                 <td><?php echo $_POST['product2'];?></td>
-                <td><?php echo $_POST['price2'];?></td>
-                <td><?php echo $_POST['number2'];?></td>
+                <td style="text-align: right;""><?php echo $_POST['price2'];?></td>
+                <td style="text-align: right;""><?php echo $_POST['number2'];?></td>
                 <td><?php echo $_POST['tax2'];?></td>
-                <td>
+                <td style="text-align: right;"">
                     <?php
                         $price_2 = $_POST['price2'];
                         $number = $_POST['number2'];
@@ -86,10 +86,10 @@
             </tr>
             <tr>
                 <td><?php echo $_POST['product3'];?></td>
-                <td><?php echo $_POST['price3'];?></td>
-                <td><?php echo $_POST['number3'];?></td>
+                <td style="text-align: right;""><?php echo $_POST['price3'];?></td>
+                <td style="text-align: right;""><?php echo $_POST['number3'];?></td>
                 <td><?php echo $_POST['tax3'];?></td>
-                <td>
+                <td style="text-align: right;"">
                     <?php
                         $price_3 = $_POST['price3'];
                         $number = $_POST['number3'];
@@ -101,10 +101,10 @@
             </tr>
             <tr>
                 <td><?php echo $_POST['product4'];?></td>
-                <td><?php echo $_POST['price4'];?></td>
-                <td><?php echo $_POST['number4'];?></td>
+                <td style="text-align: right;""><?php echo $_POST['price4'];?></td>
+                <td style="text-align: right;""><?php echo $_POST['number4'];?></td>
                 <td><?php echo $_POST['tax4'];?></td>
-                <td>
+                <td style="text-align: right;"">
                     <?php
                         $price_4 = $_POST['price4'];
                         $number = $_POST['number4'];
