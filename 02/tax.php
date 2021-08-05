@@ -67,7 +67,7 @@
                         $price_1 = $price_1 * $number * (1 + ($tax / 100));
                         echo $price_1 . "円（税込み）";
                     ?>
-                <td>
+                </td>
             </tr>
             <tr>
                 <td><?php echo $_POST['product2'];?></td>
@@ -82,7 +82,7 @@
                         $price_2 = $price_2 * $number * (1 + ($tax / 100));
                         echo $price_2 . "円（税込み）";
                     ?>
-                <td>
+                </td>
             </tr>
             <tr>
                 <td><?php echo $_POST['product3'];?></td>
@@ -97,7 +97,7 @@
                         $price_3 = $price_3 * $number * (1 + ($tax / 100));
                         echo $price_3 . "円（税込み）";
                     ?>
-                <td>
+                </td>
             </tr>
             <tr>
                 <td><?php echo $_POST['product4'];?></td>
@@ -112,7 +112,7 @@
                         $price_4 = $price_4 * $number * (1 + ($tax / 100));
                         echo $price_4 . "円（税込み）";
                     ?>
-                <td>
+                </td>
             </tr>
             <tr>
                 <td colspan="4" style="text-align:left;">合計</td>
