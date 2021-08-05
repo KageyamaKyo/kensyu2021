@@ -18,7 +18,7 @@
         <table border="1" style="border-collapse:collapse;">
             <?php
                 for($i=0; $i < $_POST['cols']; $i++){
-                    echo "<tr><td>水</td><td>火</td><td>自然</td><td>闇</td><td>光</td></tr>";
+                    echo "<tr><td>佐藤</td><td>山田</td><td>田中</td><td>山本</td><td>影山</td></tr>";
                 }
             ?>
         </table>
