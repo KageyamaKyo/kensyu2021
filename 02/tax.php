@@ -7,7 +7,7 @@
     </head>
     <body>
         <form method='post' action='tax.php'>
-            <table>
+            <table border="1" style="border-collapse:collapse;">
             <tr>
                 <th>商品名</th>
                 <th>価格（単位：円、税抜き）</th>
@@ -16,28 +16,28 @@
             </tr>
             <tr>
                 <td><input type="text" name="product1" size="20" maxlength="28" /></td>
-                <td><input type="text" name="price1" size="20" maxlength="28" /></td>
+                <td><input type="text" name="price1" size="25" maxlength="28" /></td>
                 <td><input type="text" name="number1" size="2" maxlength="3" />個</td>
                 <td><input type="radio" name="tax1" value="8％" checked="checked" />8％
                     <input type="radio" name="tax1" value="10％" />10％</td>
             </tr>
             <tr>
                 <td><input type="text" name="product2" size="20" maxlength="28" /></td>
-                <td><input type="text" name="price2" size="20" maxlength="28" /></td>
+                <td><input type="text" name="price2" size="25" maxlength="28" /></td>
                 <td><input type="text" name="number2" size="2" maxlength="3" />個</td>
                 <td><input type="radio" name="tax2" value="8％" checked="checked" />8％
                     <input type="radio" name="tax2" value="10％" />10％</td>
             </tr>
             <tr>
                 <td><input type="text" name="product3" size="20" maxlength="28" /></td>
-                <td><input type="text" name="price3" size="20" maxlength="28" /></td>
+                <td><input type="text" name="price3" size="25" maxlength="28" /></td>
                 <td><input type="text" name="number3" size="2" maxlength="3" />個</td>
                 <td><input type="radio" name="tax3" value="8％" checked="checked" />8％
                     <input type="radio" name="tax3" value="10％" />10％</td>
             </tr>
             <tr>
                 <td><input type="text" name="product4" size="20" maxlength="28" /></td>
-                <td><input type="text" name="price4" size="20" maxlength="28" /></td>
+                <td><input type="text" name="price4" size="25" maxlength="28" /></td>
                 <td><input type="text" name="number4" size="2" maxlength="3" />個</td>
                 <td><input type="radio" name="tax4" value="8％" checked="checked" />8％
                     <input type="radio" name="tax4" value="10％" />10％</td>
@@ -46,7 +46,7 @@
         <p><input type="submit" value="送信">
            <input type="reset" value="リセット"></p>
         </form>
-        <table>
+        <table border="1" style="border-collapse:collapse;">
             <tr>
                 <th>商品名</th>
                 <th>価格（単位：円、税抜き）</th>
