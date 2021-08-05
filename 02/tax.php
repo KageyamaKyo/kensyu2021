@@ -18,29 +18,36 @@
                 <td><input type="text" name="product1" size="20" maxlength="28" /></td>
                 <td><input type="text" name="price1" size="25" maxlength="28"  /></td>
                 <td><input type="text" name="number1" size="2" maxlength="3" />個</td>
-                <td><input type="radio" name="tax1" value="8％" checked="checked" />8％
-                    <input type="radio" name="tax1" value="10％" />10％</td>
+                <td><input type="radio" name="tax1" value="8" checked="checked" />8％
+                    <input type="radio" name="tax1" value="10" />10％</td>
             </tr>
             <tr>
                 <td><input type="text" name="product2" size="20" maxlength="28" /></td>
                 <td><input type="text" name="price2" size="25" maxlength="28" /></td>
                 <td><input type="text" name="number2" size="2" maxlength="3" />個</td>
-                <td><input type="radio" name="tax2" value="8％" checked="checked" />8％
-                    <input type="radio" name="tax2" value="10％" />10％</td>
+                <td><input type="radio" name="tax2" value="8" checked="checked" />8％
+                    <input type="radio" name="tax2" value="10" />10％</td>
             </tr>
             <tr>
                 <td><input type="text" name="product3" size="20" maxlength="28" /></td>
                 <td><input type="text" name="price3" size="25" maxlength="28" /></td>
                 <td><input type="text" name="number3" size="2" maxlength="3" />個</td>
-                <td><input type="radio" name="tax3" value="8％" checked="checked" />8％
-                    <input type="radio" name="tax3" value="10％" />10％</td>
+                <td><input type="radio" name="tax3" value="8" checked="checked" />8％
+                    <input type="radio" name="tax3" value="10" />10％</td>
             </tr>
             <tr>
                 <td><input type="text" name="product4" size="20" maxlength="28" /></td>
                 <td><input type="text" name="price4" size="25" maxlength="28" /></td>
                 <td><input type="text" name="number4" size="2" maxlength="3" />個</td>
-                <td><input type="radio" name="tax4" value="8％" checked="checked" />8％
-                    <input type="radio" name="tax4" value="10％" />10％</td>
+                <td><input type="radio" name="tax4" value="8" checked="checked" />8％
+                    <input type="radio" name="tax4" value="10" />10％</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="product5" size="20" maxlength="28" /></td>
+                <td><input type="text" name="price5" size="25" maxlength="28" /></td>
+                <td><input type="text" name="number5" size="2" maxlength="3" />個</td>
+                <td><input type="radio" name="tax5" value="8" checked="checked" />8％
+                    <input type="radio" name="tax5" value="10" />10％</td>
             </tr>
         </table>
         <p><input type="submit" value="送信">
@@ -115,10 +122,25 @@
                 </td>
             </tr>
             <tr>
+                <td><?php echo $_POST['product5'];?></td>
+                <td style="text-align: right;""><?php echo $_POST['price5'];?></td>
+                <td style="text-align: right;""><?php echo $_POST['number5'];?></td>
+                <td><?php echo $_POST['tax5'];?></td>
+                <td style="text-align: right;"">
+                    <?php
+                        $price_5 = $_POST['price5'];
+                        $number = $_POST['number5'];
+                        $tax = $_POST['tax5'];
+                        $price_5 = $price_5 * $number * (1 + ($tax / 100));
+                        echo $price_5 . "円（税込み）";
+                    ?>
+                </td>
+            </tr>
+            <tr>
                 <td colspan="4" style="text-align:left;">合計</td>
                 <td>
                     <?php
-                        echo $price = $price_1 + $price_2 + $price_3 + $price_4 . "円（税込み）";
+                        echo $price = $price_1 + $price_2 + $price_3 + $price_4 + $price_5 . "円（税込み）";
                     ?>
                 </td>
             </tr>
