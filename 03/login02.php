@@ -7,8 +7,8 @@
     </head>
     <body>
         <form method='post' action='result02.php'>
-            <p><input type="text" name="id" size="20" maxlength="28" placeholder="ID" />
-                <input type="password" name="password" size="20" maxlength="28" placeholder="PASSWORD" /></p>
+            <p><input type="text" name="id" size="20" maxlength="28" placeholder="ID" required/>
+                <input type="password" name="password" size="20" maxlength="28" placeholder="PASSWORD" required/></p>
             <p><input type="submit" value="ログイン">
                 <input type="reset" value="リセット"></p>
         </form>
