@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset='utf-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>ログイン成功画面</title>
-    </head>
-    <body>
-        <p>ログイン成功おめでとう、やったね＞＜</p>
-    </body>
-</html>
+<?php
+    $id = "kageyama";
+    $password = "0123";
+
+    if($_POST['id'] == $id AND $_POST['password'] == $password){
+        echo 'ログイン成功おめでとう';
+    } else {
+            echo 'ログイン失敗してるで';
+    }
+?>
