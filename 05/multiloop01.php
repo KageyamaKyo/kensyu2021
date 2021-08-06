@@ -13,8 +13,9 @@
                 $team_c = array("1G", "2G", "3G", "営業G", "マーケG");
                 $team_d = array("お水", "お茶", "コーヒー", "お酒", "ウーロン茶");
                 $team_e = array("鯛", "鮪", "鯖", "鰯", "鮭");
+                $team_f = array("水星", "金星", "地球", "火星", "木星");
 
-                $team_all = array($team_a, $team_b, $team_c, $team_d, $team_e);
+                $team_all = array($team_a, $team_b, $team_c, $team_d, $team_e, $team_f);
 
                 foreach($team_all as $team){
                     echo "<tr>";
