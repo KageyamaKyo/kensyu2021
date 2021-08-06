@@ -24,7 +24,7 @@
                     for($e=0; $e < $_POST['rows']; $e++){
                         echo "<td>テスト</td>";
                     }
-                    "</tr>";
+                    echo "</tr>";
                 }
             ?>
         </table>

@@ -24,7 +24,7 @@
                     for($e=1; $e <= $_POST['rows']; $e++){
                         echo "<td>" . $i . "-" . $e . "</td>";
                     }
-                    "</tr>";
+                    echo "</tr>";
                 }
             ?>
         </table>
