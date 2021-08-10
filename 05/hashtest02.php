@@ -16,11 +16,9 @@
                 'food' => '牡蠣'
                 );
 
-                echo "<tr>";
                 foreach($my_data as $each){
-                    echo "<td>" . $each . "</td>";
+                    echo  $each . "<br>";
                 }
-                echo "</tr>";
 
                 echo "<tr>";
                 foreach($my_data as $key => $value){
