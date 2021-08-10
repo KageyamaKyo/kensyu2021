@@ -32,7 +32,7 @@
 
                 $players = array($player01, $player02, $player03);
 
-                echo "<tr><td>背番号</td><td>名前</td><td>ポジション</td><td>出身地</td><td>入団年</td></tr>";
+                echo "<tr><th>背番号</th><th>名前</th><th>ポジション</th><th>出身地</th><th>入団年</th></tr>";
                 echo "<tr>";
                 foreach($players as $each){
                     echo "<td>" . $each['id'] . "</td>"
