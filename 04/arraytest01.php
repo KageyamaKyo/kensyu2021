@@ -8,30 +8,29 @@
     <body>
         <?php
             $fruit = array("りんご", "すいか", "みかん", "なし", "イチゴ", "かき");
-            echo $fruit[3];
-            echo $fruit[0];
-            echo $fruit[9];
+            echo $fruit[3] . "<br>";
+            echo $fruit[0] . "<br>";
+            echo $fruit[9] . "<br>";
             $fruit[2] = "いちじく";
             $fruit[6] = "キウイ";
             for($i=0; $i < count($fruit) ; $i++){
-                echo $fruit[$i] . "<br/>";
+                echo $fruit[$i] . "<br>";
             }
 
             echo "<hr>";
             foreach($fruit as $each){
-              echo $each . "<br/>";
+              echo $each . "<br>";
             }
 
             echo "<hr>";
 
             foreach($fruit as $key => $value){
-              echo $key . "番目の要素は" . $value . "です。<br/>";
+              echo $key . "番目の要素は" . $value . "です。<br>";
             }
 
         ?>
         <pre>
             <?php var_dump($fruit); ?>
         </pre>
-
     </body>
 </html>
